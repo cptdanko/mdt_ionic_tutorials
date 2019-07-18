@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Note</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/notes">Notes</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle> {{note.addedAt | date: 'short'}} </ion-card-subtitle>
+      <ion-input [(ngModel)]="note.title" placeholder="Note title"></ion-input>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-textarea
+      [(ngModel)]="note.text"
+      placeholder="Write your note here"
+      rows="6"
+      cols="10"></ion-textarea>
+    </ion-card-content>
+    <ion-button expand="block" (click)="saveNote()">
+      Save
+    </ion-button>
+  </ion-card>
+
+</ion-content>
