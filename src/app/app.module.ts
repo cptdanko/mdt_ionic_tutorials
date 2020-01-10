@@ -10,9 +10,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 //Firebase imports
-import { AngularFireModule } from 'angularfire2';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
-import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 import * as firebase from 'firebase' ;
 import { environment } from 'src/environments/environment';
 
@@ -24,7 +25,8 @@ import { environment } from 'src/environments/environment';
     BrowserModule,
     IonicModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AppRoutingModule, AngularFirestoreModule, AngularFireAuthModule
+    AppRoutingModule, AngularFirestoreModule, AngularFireAuthModule,
+    AngularFireStorageModule
   ],
   providers: [
     StatusBar,

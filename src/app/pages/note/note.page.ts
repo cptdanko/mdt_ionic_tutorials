@@ -45,6 +45,7 @@ export class NotePage implements OnInit {
       });
     } else {
       this.notesService.updateNote(this.note);
+      loading.dismiss();
     }
   }
 }

@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Image upload</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <h1> Upload images to firebase storage</h1>
+    <p>
+      This page demostrates achieving this functionality via the use 
+      of reusbale Angular components.
+    </p>
+  <app-firebase-image-upload
+  path="Component"
+  (outcome)="uploadFinished($event)">
+
+  </app-firebase-image-upload
+  >
+</ion-content>

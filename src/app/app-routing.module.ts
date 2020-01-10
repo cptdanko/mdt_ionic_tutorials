@@ -11,14 +11,11 @@ const routes: Routes = [
     path: 'home',
     loadChildren: './home/home.module#HomePageModule'
   },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  },
   { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
   { path: 'register', loadChildren: './pages/register/register.module#RegisterPageModule' },
   { path: 'notes', loadChildren: './pages/notes/notes.module#NotesPageModule' },
-  { path: 'note', loadChildren: './pages/note/note.module#NotePageModule' }
+  { path: 'note', loadChildren: './pages/note/note.module#NotePageModule' },
+  { path: 'image-upload', loadChildren: './pages/image-upload/image-upload.module#ImageUploadPageModule' }
 ];
 
 @NgModule({

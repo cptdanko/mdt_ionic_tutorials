@@ -24,7 +24,12 @@ export class AppComponent {
       title: 'Note',
       url: '/note',
       icon: 'create',
-    }
+    },
+    {
+      title: 'Upload',
+      url: '/image-upload',
+      icon: 'cloud-upload',
+    },
   ];
 
   constructor(

@@ -1,0 +1,22 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>
+      Upload Image
+    </ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <div *ngIf="uploadProgress | async as pct">
+      Progress: {{ round(pct | number) }}%
+    <ion-progress-bar value="{{ pct / 100 }}"></ion-progress-bar>
+    </div>
+    <ion-item>
+      <ion-spinner [hidden]="!isUploading" name="lines"></ion-spinner>
+      <div class="btn btn-primary">
+        <input type="file"
+               id="file"
+               (change)="handleFileInput($event.target.files)">
+        <ion-button (click)="upload()"> Upload </ion-button>
+      </div>
+    </ion-item>
+  </ion-card-content>
+</ion-card>
