@@ -8,8 +8,10 @@ At this point, it contains the sample code to
     - Use Firebase for email based authentication
     - Save and Retrieve notes in a Firebase/Firestore using user credentials
     - REMEMBER! You need to add the environments file for this to work
-If you would like to know more about this, then have a read of the blogpost, 
+    - Build a reusable Angular component to upload an image(file) to Firebase storage
+If you would like to know more about this, then have a read of the following blogposts, 
 - [How to save user data with Firebase and Ionic]
+- [Reusable Angular/Ionic (4) component to upload images to Firebase storage]
 
 > Please keep in mind, the purpose of the code here is to demonstrate a conept of how to do certain things in a NoSql database. This is by no means the most effcient way of doing things.
 
@@ -23,6 +25,6 @@ Maybe checkout some of the other [apps] that I have built at [My Day To-Do]
 [apps]: https://mydaytodo.com/apps/
 [My Day To-Do]: https://mydaytodo.com/
 [How to save user data with Firebase and Ionic]: https://mydaytodo.com/2019/07/26/how-to-save-user-data-with-firebase-ionic/
-
+[Reusable Angular/Ionic (4) component to upload images to Firebase storage]: https://mydaytodo.com/angular-ionic-component-upload-images-to-cloud/
 [blogpost]: https://mydaytodo.com/2019/07/26/how-to-save-user-data-with-firebase-ionic/
 [Simple Notes]: https://play.google.com/store/apps/details?id=com.mydaytodo.simplenotes
