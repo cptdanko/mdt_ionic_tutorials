@@ -3,12 +3,14 @@
 
 The aim of this repo is to "house" all the code that I use to explain certain concepts in building Hybrid apps using Ionic Framework. 
 # Current state
-At this point, it contains the sample code to 
+At this point, it contains the sample code to,
+
     - Build an Ionic app using Firebase
     - Use Firebase for email based authentication
     - Save and Retrieve notes in a Firebase/Firestore using user credentials
     - REMEMBER! You need to add the environments file for this to work
     - Build a reusable Angular component to upload an image(file) to Firebase storage
+
 If you would like to know more about this, then have a read of the following blogposts, 
 - [How to save user data with Firebase and Ionic]
 - [Reusable Angular/Ionic (4) component to upload images to Firebase storage]
